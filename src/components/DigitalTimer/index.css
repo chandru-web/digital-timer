@@ -1,0 +1,249 @@
+/* Write your CSS here */
+
+.app-container {
+  background-image: linear-gradient(to right, #ffff, #cffcf1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.digital-timer-heading {
+  color: #1e293b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.timer-overall-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.image-timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 600px;
+  width: 600px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  color: #00d9f5;
+  font-size: 29px;
+}
+
+.timer-status {
+  color: #0f172b;
+}
+
+.timer-controller-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.start-pause-container,
+.reset-container {
+  display: flex;
+  margin-right: 40px;
+}
+.start-pause-icon,
+.reset-icon {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.start-pause-text,
+.reset-text {
+  color: #0f172b;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.start-pause-button,
+.reset-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.start-pause-button,
+.reset-button:hover {
+  transform: scale(1.1);
+}
+
+.set-timer-limit-text {
+  color: #1e293b;
+  font-size: 20px;
+}
+
+.increment-decrement-count-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.decrease-count-button,
+.increase-count-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.increase-count-button {
+  font-size: 30px;
+  color: #0f172b;
+  transition: transform 0.2s;
+}
+
+.increase-count-button:hover {
+  transform: scale(1.1);
+}
+
+.decrease-count-button {
+  font-size: 30px;
+  color: #0f172b;
+  margin-bottom: 5px;
+  transition: transform 0.2s;
+}
+
+.decrease-count-button:hover {
+  transform: scale(1.1);
+}
+
+.count {
+  color: #0f172b;
+  font-weight: bold;
+  text-align: center;
+  background-color: #00d9f5;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .timer-overall-container {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+
+  .image-timer-container {
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+  }
+
+  .timer-controller-container {
+    width: 100%;
+  }
+
+  .start-pause-icon,
+  .reset-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .reset-text {
+    font-size: 18px;
+  }
+
+  .set-timer-limit-text {
+    font-size: 18px;
+  }
+
+  .increase-count-button,
+  .decrease-count-button {
+    font-size: 24px;
+  }
+
+  .count {
+    height: 30px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .digital-timer-heading {
+    font-size: 24px;
+  }
+
+  .image-timer-container {
+    height: 250px;
+    width: 250px;
+  }
+
+  .timer {
+    font-size: 24px;
+  }
+
+  .timer-status {
+    font-size: 18px;
+  }
+
+  .set-timer-limit-text {
+    font-size: 16px;
+  }
+
+  .increase-count-button,
+  .decrease-count-button {
+    font-size: 20px;
+  }
+
+  .count {
+    height: 25px;
+    width: 50px;
+  }
+
+  .timer-container {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  .timer {
+    font-size: 18px;
+  }
+
+  .timer-status {
+    font-size: 16px;
+  }
+}
